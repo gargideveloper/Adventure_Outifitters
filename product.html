@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> JetSet - Products </title>
+    <link rel="stylesheet" href="products.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <!--Top Navbar-->
+    <div class="container-fluid bg-dark px-5 d-none d-lg-black">
+        <div class="row gx-0">
+            <div class="col-lg-8 text-center text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+
+                    <small class="me-3 text-light"><i class="fa fa-map-marker-alt me-2"></i>123 Street, Mumbai,India</small>
+                    <small class="me-3 text-light"><i class="fa fa-phone-alt me-2"></i>+91 3216 6540 87</small>
+                    <small class="me-3 text-light"><i class="fa fa-envelope-open me-2"></i>info@example.com</small>
+                </div>
+            </div>
+            <!--social buttton-->
+            <div class="col-lg-4 text-center text-lg-end">
+                <div class="d-inline-flex align-items-center" style="height: 45px;">
+                    <a href="" class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fab fa-twitter fw-normal"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fab fa-facebook-f fw-normal"></i>
+                    </a>
+                    <a href="" class="btn btn-sm btn-outline-light btn-sm-square rounded-circle me-2">
+                        <i class="fab fa-instagram fw-normal"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!--Hero Section-->
+    <div class="container-fluid position-relative p-0">
+        <!--Main Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
+            <a href="" class="navbar-brand p-0">
+                <h1 class="text-primary m-0"><i class="fa fa-map-marked-alt me-3"></i>JetSet</h1>
+            </a>
+            <!--menu button for responsive device-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <!--menu items-->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="home.html" class="nav-item nav-link ">Home</a>
+                    <a href="home.html" class="nav-item nav-link">About</a>
+                    <a href="home.html" class="nav-item nav-link">Services</a>
+                    <a href="home.html" class="nav-item nav-link">Packages</a>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <a href="" class="nav-item nav-link active">Products </a>
+                </div>
+                <a href="signin.html" class="btn btn-primary rounded-pill py-4 px-4">Register</a>
+            </div>
+        </nav>
+        </div>
+
+        
+        <nav>
+            <h2>Products</h2>
+            <!--<img src="paypal-icon.png" alt="PayPal" class="paypal-icon" onclick="connectPayPal()">-->
+            <button onclick="toggleCart()">🛒 Open Cart</button>
+        </nav>
+
+        <div class="container">
+            <div class="product-list">
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/suitcase.jpg" alt="Suitcase" class="product-image">
+                    <h4>Travel Suitcase</h4>
+                    <p>Price: Rs.2999</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/waterbottle.jpg" alt="Water Bottle" class="product-image">
+                    <h4>Insulated Water Bottle</h4>
+                    <p>Price: $30</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/shoes.jpg" alt="Men Shoes" class="product-image">
+                    <h4>Men Shoes</h4>
+                    <p>Price: Rs.1489</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/shoesw.jpg" alt="Women Shoes" class="product-image">
+                    <h4>Women Shoes</h4>
+                    <p>Price: Rs.899</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/backpack.jpg" alt="Backpack" class="product-image">
+                    <h4>Adventure Backpack</h4>
+                    <p>Price: Rs.649</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/socks.jpg" alt="Soaks" class="product-image">
+                    <h4>Soaks</h4>
+                    <p>Price: Rs.150</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/slippers.jpg" alt="Slippers" class="product-image">
+                    <h4>Slippers</h4>
+                    <p>Price: Rs.599</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/stick.jpg" alt="Stick" class="product-image">
+                    <h4>Stick</h4>
+                    <p>Price: Rs.875</p>
+                    <button>Add to Cart</button>
+                </div>
+
+                <div class="product">
+                    <div class="nav-arrows">
+                        <button onclick="prevImage(this)">&lt;</button>
+                        <button onclick="nextImage(this)">&gt;</button>
+                    </div>
+                    <img src="images/wheelchair.jpg" alt="Wheel Chair" class="product-image">
+                    <h4>WheelChair</h4>
+                    <p>Price: Rs.4249</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+
+            <div class="cart" id="cart">
+                <button class="close-btn" onclick="toggleCart()">✖</button>
+                <h2>Your Cart</h2>
+                <div class="cart-list">
+                    <p>Your cart is empty.</p>
+                </div>
+
+                <div class="money-section">
+                    <h3>Total: $0</h3>
+                    <button>Checkout</button>
+                </div>
+            </div>
+
+        </div>
+
+<script src="g.js"></script>
+    </body>
+
+    </html>
+    
